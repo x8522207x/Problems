@@ -100,8 +100,9 @@ the binary representation is big-endian, i.e. the first character of string S co
   </tbody>
 </table>
 
-<br>找第一個1看他幾個位數  ex. <span style="color: red;">1</span>00100 => 6
-<br>找除了第一個1，剩下1的數量   ex.  100<span style="color: red;">1</span>00 => 1
-<br>答案兩個數字加起來
+找第一個1看他第幾個位數  ex. <font color=red>1</font>00100 => 6  
+找除了第一個1，剩下1的數量   ex.  100<font color=red>1</font>00 => 1  
+答案兩個數字加起來  
+
 
 

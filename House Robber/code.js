@@ -3,15 +3,10 @@
  * @return {number}
  */
 var rob = function (nums) {
-  let indexSums = [];
-  indexSums[-2] = 0;
+  let mem = [];
   for (let i = 0; i < nums.length; i++) {
-    for (let idx in indexSums) {
-      if ((i - idx >= 2) && (i - idx <= 3)) {
-        indexSums[i] = Math.max(indexSums[i] ?? 0, nums[i] + indexSums[idx]);
-      }
-    }
+    mem[i] = Math.max(mem[i] ?? 0, nums[i] + (mem[i - 2] ?? 0), nums[i] + (mem[i - 3] ?? 0));
   }
 
-  return Math.max(...indexSums);
+  return Math.max(...mem);
 };

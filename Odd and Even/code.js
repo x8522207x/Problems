@@ -9,3 +9,4 @@ function calculate(bitString) {
 let S='10011';
 
 document.write(calculate(S));
+dddd

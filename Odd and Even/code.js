@@ -5,7 +5,7 @@ function calculate(bitString) {
   let actionSums = digit + remainOneCounts;
   return actionSums;
 }
-sss
+
 let S='10011';
 
 document.write(calculate(S));
